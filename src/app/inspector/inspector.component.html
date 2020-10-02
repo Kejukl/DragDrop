@@ -1,0 +1,9 @@
+<h5>inspect </h5>
+<form *ngIf="selectedNode" (ngSubmit)="onCommitForm()">
+     <span>location: "{{selectedNode.part.location}}"</span> <br>
+     <span>location: "{{selectedNode.data.loc}}"</span> <br>
+    name: <input name="key" [(ngModel)]="data.key" placeholder="{{selectedNode.data.key}}"> <br>
+    color: <input name="color" [(ngModel)]="data.color" placeholder="{{selectedNode.data.color}}" />
+    <button type="submit">Commit</button>
+  </form>
+
